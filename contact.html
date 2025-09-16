@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts for luxury look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="luxury-bg">
+    <header class="modern-header luxury-header">
+        <div class="header-top">
+            <button class="back-btn luxury-btn" onclick="history.back()">&#8592; Back</button>
+            <button class="hamburger luxury-hamburger" id="hamburger-btn" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-text">
+                <h1 class="header-title">
+                    <span class="header-gradient">Welcome to the S1 Title Fighting Team Portfolio</span>
+                </h1>
+            </div>
+        </div>
+        <nav>
+            <ul class="modern-navbar luxury-navbar" id="main-navbar">
+                <li><a href="index.html"><i class="fa fa-home"></i> Beranda</a></li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+                <li><a href="team.html"><i class="fa fa-users"></i> Our Team</a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section luxury-card animate-fadein">
+            <h2 class="contact-title luxury-name"><i class="fa fa-envelope"></i> Get in Touch</h2>
+            <form class="contact-form" action="https://formspree.io/f/xovnyrnq" method="POST">
+                <label for="name"><i class="fa fa-user"></i> Name:</label>
+                <input type="text" id="name" name="name" required class="luxury-input">
+
+                <label for="email"><i class="fa fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email" required class="luxury-input">
+
+                <label for="message"><i class="fa fa-comment-dots"></i> Message:</label>
+                <textarea id="message" name="message" required class="luxury-input"></textarea>
+
+                <button type="submit" class="luxury-btn"><i class="fa fa-paper-plane"></i> Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="luxury-footer">
+        <p>&copy; 2025 PejuangTitelS1.</p>
+    </footer>
+    <a href="https://wa.me/6285834428378?text=Halo%20saya%20tertarik%20dengan%20jasa%20anda" class="wa-float" target="_blank" aria-label="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Chat via WhatsApp</span>
+    </a>
+    <script src="js/main.js"></script>
+    <script>
+    window.addEventListener('scroll', function() {
+        const waBtn = document.querySelector('.wa-float');
+        if (window.scrollY > 120) {
+            waBtn.classList.add('show');
+        } else {
+            waBtn.classList.remove('show');
+        }
+    });
+    </script>
+</body>
+</html>

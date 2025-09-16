@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts for luxury look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="luxury-bg">
+    <header class="modern-header luxury-header">
+        <div class="header-top">
+            <button class="back-btn luxury-btn" onclick="history.back()">&#8592; Back</button>
+            <button class="hamburger luxury-hamburger" id="hamburger-btn" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-text">
+                <h1 class="header-title">
+                    <span class="header-gradient">Welcome to the S1 Title Fighting Team Portfolio</span>
+                </h1>
+            </div>
+        </div>
+        <nav>
+            <ul class="modern-navbar luxury-navbar" id="main-navbar">
+                <li><a href="index.html"><i class="fa fa-home"></i> Beranda</a></li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+                <li><a href="team.html"><i class="fa fa-users"></i> Our Team</a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="center-main">
+        <section class="info-section luxury-card animate-fadein">
+            <h2 class="luxury-name">About Our Team</h2>
+            <p class="luxury-bio">We are a team of dedicated professionals committed to producing high-quality work, with attention to detail and innovation that brings you the best solutions.</p>
+        </section>
+        <section class="info-section luxury-card animate-fadein">
+            <h2 class="luxury-name">Our Mission</h2>
+            <ul class="mission-list">
+                <li>Providing the best services and solutions that not only meet but exceed our clients' expectations.</li>
+                <li>Committed to delivering exceptional services and solutions tailored to our clients' unique needs.</li>
+                <li>Our focus is on providing superior service and appropriate solutions to ensure complete client satisfaction.</li>
+                <li>Providing professional services and innovative solutions that address every client challenge with maximum results.</li>
+                <li>We exist to provide exceptional services and solutions that create real value for our clients.</li>
+            </ul>
+        </section>
+        <section class="info-section contact-highlight luxury-card animate-fadein">
+            <h2 class="luxury-name">Get in Touch</h2>
+            <p class="luxury-bio">Let's start a fruitful communication! Find us on the <a href="contact.html" class="contact-link">contact page</a> for more information.</p>
+            <a href="contact.html" class="contact-btn luxury-btn">Contact Us</a>
+        </section>
+    </main>
+    <footer class="luxury-footer">
+        <p>&copy; 2025 PejuangTitelS1.</p>
+    </footer>
+    <a href="https://wa.me/6285834428378?text=Halo%20saya%20tertarik%20dengan%20jasa%20anda" class="wa-float" target="_blank" aria-label="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Chat via WhatsApp</span>
+    </a>
+    <script src="js/main.js"></script>
+    <script>
+    window.addEventListener('scroll', function() {
+        const waBtn = document.querySelector('.wa-float');
+        if (window.scrollY > 120) {
+            waBtn.classList.add('show');
+        } else {
+            waBtn.classList.remove('show');
+        }
+    });
+    </script>
+</body>
+</html>

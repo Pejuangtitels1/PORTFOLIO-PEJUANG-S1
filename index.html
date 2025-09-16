@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts for luxury look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="luxury-bg" id="body">
+    <header class="modern-header luxury-header">
+        <div class="header-top">
+            <button class="back-btn luxury-btn" onclick="history.back()">&#8592; Back</button>
+            <button class="hamburger luxury-hamburger" id="hamburger-btn" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-text">
+                <h1 class="header-title">
+                    <span class="header-gradient">Welcome to the S1 Title Fighting Team Portfolio</span>
+                </h1>
+            </div>
+            <!-- Dark/Light Mode Toggle -->
+            <button id="mode-toggle" class="luxury-btn mode-toggle" aria-label="Toggle dark/light mode">
+                <i class="fa fa-moon"></i>
+            </button>
+        </div>
+        <nav>
+            <ul class="modern-navbar luxury-navbar" id="main-navbar">
+                <li><a href="index.html"><i class="fa fa-home"></i> Beranda</a></li>
+                <li><a href="about.html"><i class="fa fa-info-circle"></i> About Us</a></li>
+                <li><a href="team.html"><i class="fa fa-users"></i> Our Team</a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="center-main">
+        <section class="info-section hero-section luxury-card animate-fadein parallax-hero">
+            <img src="img/1.jpg" class="hero-img luxury-photo" alt="Team Hero">
+            <h2 class="hero-title luxury-name">We are a team of dedicated professionals</h2>
+            <p class="hero-subtitle luxury-bio">
+                Committed to producing high-quality work, with attention to detail and innovation that brings you the best solutions.
+            </p>
+        </section>
+
+        <div class="luxury-divider"></div>
+
+        <!-- Animated Statistics Section -->
+        <section class="stats-section luxury-card animate-fadein">
+            <h2 class="luxury-name"><i class="fa fa-trophy"></i> Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="120">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Awards</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="luxury-divider"></div>
+
+        <section class="gallery-section luxury-card animate-fadein">
+            <h2 class="luxury-name">Our Works & Achievements</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Mobile App Design">
+                    <div class="gallery-caption">Mobile App Design</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Website Development">
+                    <div class="gallery-caption">Website Development</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Branding & Logo">
+                    <div class="gallery-caption">Branding & Logo</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="UI/UX Showcase">
+                    <div class="gallery-caption">UI/UX Showcase</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Photography">
+                    <div class="gallery-caption">Photography</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Animation & Motion">
+                    <div class="gallery-caption">Animation & Motion</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="luxury-divider"></div>
+
+        <section class="testimonial-section luxury-card animate-fadein">
+            <h2 class="luxury-name"><i class="fa fa-quote-left"></i> Testimonials</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-stars">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    <div class="testimonial-text">
+                        "Tim ini sangat profesional dan hasil kerjanya luar biasa. Sangat direkomendasikan!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/testi1.jpg" alt="Client 1" class="testimonial-photo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Rizky+Pratama&background=ffd700&color=232526&rounded=true';">
+                        <span>Rizky Pratama<br><small>CEO, PT. Maju Jaya</small></span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-stars">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-text">
+                        "Pelayanan cepat, ramah, dan hasil desainnya sangat memuaskan."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/testi2.jpg" alt="Client 2" class="testimonial-photo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Sarah+Aulia&background=ffd700&color=232526&rounded=true';">
+                        <span>Sarah Aulia<br><small>Entrepreneur</small></span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-stars">
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                    <div class="testimonial-text">
+                        "Solusi inovatif dan support yang sangat baik. Sukses selalu!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="img/testi3.jpg" alt="Client 3" class="testimonial-photo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Andi+Wijaya&background=ffd700&color=232526&rounded=true';">
+                        <span>Andi Wijaya<br><small>Startup Founder</small></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="luxury-divider"></div>
+
+        <section class="faq-section luxury-card animate-fadein">
+            <h2 class="luxury-name"><i class="fa fa-question-circle"></i> Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question"><i class="fa fa-plus"></i> Apa keunggulan tim ini?</button>
+                    <div class="faq-answer">
+                        <p>Kami mengutamakan kualitas, inovasi, dan komunikasi yang baik dengan klien. Setiap proyek dikerjakan secara profesional dan penuh dedikasi.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><i class="fa fa-plus"></i> Bagaimana cara memulai kerja sama?</button>
+                    <div class="faq-answer">
+                        <p>Silakan hubungi kami melalui halaman <a href="contact.html" class="contact-link">Contact</a>. Kami akan segera merespon dan mendiskusikan kebutuhan Anda.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><i class="fa fa-plus"></i> Apakah bisa konsultasi gratis?</button>
+                    <div class="faq-answer">
+                        <p>Tentu! Kami menyediakan sesi konsultasi gratis untuk memahami kebutuhan Anda sebelum memulai proyek.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question"><i class="fa fa-plus"></i> Berapa lama pengerjaan rata-rata proyek?</button>
+                    <div class="faq-answer">
+                        <p>Durasi pengerjaan tergantung kompleksitas proyek, namun rata-rata 2-4 minggu untuk proyek standar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="luxury-divider"></div>
+
+        <section class="info-section contact-highlight luxury-card animate-fadein">
+            <h2 class="luxury-name">Get in Touch</h2>
+            <p class="luxury-bio">Let's start a fruitful communication! Find us on the <a href="contact.html" class="contact-link">contact page</a> for more information.</p>
+            <a href="contact.html" class="contact-btn luxury-btn">Contact Us</a>
+        </section>
+    </main>
+    <footer class="luxury-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 PejuangTitelS1.</p>
+            <div class="social-icons">
+                <a href="https://instagram.com/ozangabee" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://tiktok.com/pejuangtitels1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://github.com/Pejuangtitels1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:info@example.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/6285834428378?text=Halo%20saya%20tertarik%20dengan%20jasa%20anda" class="wa-float" target="_blank" aria-label="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Chat via WhatsApp</span>
+    </a>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up"></i></button>
+    <script src="js/main.js"></script>
+    <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const icon = this.querySelector('i');
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+            } else {
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.maxHeight = null);
+                document.querySelectorAll('.faq-question i').forEach(i => {
+                    i.classList.remove('fa-minus');
+                    i.classList.add('fa-plus');
+                });
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+            }
+        });
+    });
+
+    // WhatsApp button show/hide on scroll
+    window.addEventListener('scroll', function() {
+        const waBtn = document.querySelector('.wa-float');
+        if (window.scrollY > 120) {
+            waBtn.classList.add('show');
+        } else {
+            waBtn.classList.remove('show');
+        }
+    });
+
+    // Animated Statistics
+    function animateStats() {
+        document.querySelectorAll('.stat-number').forEach(el => {
+            const target = +el.getAttribute('data-target');
+            let count = 0;
+            const speed = Math.max(10, 2000 / target);
+            function update() {
+                if (count < target) {
+                    count += Math.ceil(target / 50);
+                    if (count > target) count = target;
+                    el.textContent = count;
+                    setTimeout(update, speed);
+                } else {
+                    el.textContent = target;
+                }
+            }
+            update();
+        });
+    }
+    let statsAnimated = false;
+    window.addEventListener('scroll', function() {
+        const statsSection = document.querySelector('.stats-section');
+        if (!statsAnimated && statsSection && statsSection.getBoundingClientRect().top < window.innerHeight - 100) {
+            animateStats();
+            statsAnimated = true;
+        }
+    });
+
+    // Dark/Light Mode Toggle
+    const modeToggle = document.getElementById('mode-toggle');
+    const body = document.getElementById('body');
+    let darkMode = true;
+    modeToggle.addEventListener('click', function() {
+        darkMode = !darkMode;
+        body.classList.toggle('light-mode', !darkMode);
+        modeToggle.innerHTML = darkMode
+            ? '<i class="fa fa-moon"></i>'
+            : '<i class="fa fa-sun"></i>';
+    });
+
+    // Parallax Hero
+    window.addEventListener('scroll', function() {
+        const hero = document.querySelector('.parallax-hero');
+        if (hero) {
+            let offset = window.scrollY * 0.3;
+            hero.style.backgroundPosition = `center ${offset}px`;
+        }
+    });
+
+    // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) {
+            backToTop.classList.add('show');
+        } else {
+            backToTop.classList.remove('show');
+        }
+    });
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    </script>
+</body>
+</html>
